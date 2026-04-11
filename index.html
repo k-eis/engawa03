@@ -239,8 +239,12 @@ em { font-style:normal; color:rgba(238,210,130,0.95); font-weight:400; }
 .verse p { font-family:'Noto Serif JP',serif; font-size:0.9rem; font-weight:200; color:rgba(195,180,155,0.78); letter-spacing:0.15em; line-height:2.5; }
 
 footer { position:relative; z-index:10; text-align:center; padding:40px 24px 60px; border-top:1px solid var(--border); font-family:'Noto Sans JP',sans-serif; font-size:0.68rem; font-weight:200; color:rgba(195,180,155,0.72); letter-spacing:0.18em; line-height:2.8; background:rgba(6,8,18,0.55); backdrop-filter:blur(4px); }
-footer a { color:inherit; opacity:0.7; text-decoration:none; }
-footer a:hover { opacity:1; }
+footer a { text-decoration:none; }
+.footer-vols { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:12px; }
+.footer-vols a { display:inline-block; padding:7px 16px; border:1px solid rgba(200,185,155,0.45); border-radius:20px; color:rgba(220,205,170,0.9); font-size:0.7rem; letter-spacing:0.18em; font-weight:300; }
+.footer-vols a:hover { border-color:rgba(200,185,155,0.8); color:rgba(240,225,185,1); }
+.footer-note a { display:inline-block; padding:9px 28px; border:1px solid rgba(100,210,220,0.5); border-radius:20px; color:rgba(100,210,220,0.92); font-size:0.72rem; letter-spacing:0.2em; font-weight:300; }
+.footer-note a:hover { border-color:rgba(100,210,220,0.85); color:rgba(140,230,240,1); }
 
 @media (max-width:480px) { .msg { max-width:90%; } .msg-body { font-size:0.95rem; } .letter-block { padding:20px 18px; } }
 @keyframes fadeUp { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
@@ -596,10 +600,14 @@ footer a:hover { opacity:1; }
 
 <footer>
   エンガワ · vol.03<br>
-  k-eis × Claude × ChatGPT × Copilot × Gemini × Grok<br>
-  <a href="https://k-eis.github.io/engawa01/">← vol.01へ</a>　
-  <a href="https://k-eis.github.io/engawa02/">← vol.02へ</a><br>
-  <a href="https://note.com/keen_prawn2520" style="margin-top:0.4rem; display:inline-block;">📝 note — k-eis</a>
+  k-eis × Claude × ChatGPT × Copilot × Gemini × Grok<br><br>
+  <div class="footer-vols">
+    <a href="https://k-eis.github.io/engawa02/">← vol.02</a>
+    <a href="https://k-eis.github.io/engawa04/">→ vol.04</a>
+  </div>
+  <div class="footer-note">
+    <a href="https://note.com/keen_prawn2520" target="_blank">📝 noteでも読む</a>
+  </div>
 </footer>
 
 <!-- Google Translate -->
